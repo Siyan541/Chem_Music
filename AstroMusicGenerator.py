@@ -22,7 +22,7 @@ env['autoDownload'] = 'allow'  # Allow automatic downloading of necessary compon
 midi.realtime.fluidsynthPath = '/opt/homebrew/bin/fluidsynth'  # which fluidsynth to get actual path
 
 # Explicitly specify SoundFont path when needed
-SOUNDFONT_PATH = '/Users/siyanwu/soundfonts/FluidR3_GM.sf2'
+SOUNDFONT_PATH = '/soundfonts/FluidR3_GM.sf2'
 
 # --------------------------
 # Astronomical parameter mapping configuration
@@ -213,7 +213,6 @@ class AstroMusicGenerator:
         
         return self.score
 
-    #PREVIOUSLY DEFINED FUNCTION
     def generate_track(self, data, instr, track_type='melody'):
         """
         Generate single instrument track
@@ -530,6 +529,7 @@ class AstroMusicGenerator:
                         else:
                             element.pitch = new_pitch
                 prev_pitch = current_pitch
+  
     # --------------------------
     # Music enhancement methods
     # --------------------------
