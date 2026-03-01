@@ -117,7 +117,7 @@ class AstroChoirGenerator:
                 n.duration.quarterLength = 0.5
                 extended_stream.append(n)
             except:
-                continue  # Skip invalid notes
+                continue 
         return extended_stream
 
     def _motif_variation(self, melody):
@@ -138,7 +138,7 @@ class AstroChoirGenerator:
         for note_obj in inverted:
             new_part.append(note_obj)
     
-        # Rhythm scaling (ensure only notes/rests are added)
+        # Rhythm scaling 
         temp_stream = stream.Stream()
         for note_obj in motif:
             temp_stream.append(note_obj)
@@ -169,7 +169,7 @@ class AstroChoirGenerator:
         mf.save(filename)
         
 
-# Upgrade multi-celestial processing
+
 class EnhancedAstroChoirGenerator(AstroChoirGenerator):
     def generate_massive_choir(self, max_stars=997):
         # Dynamic chunking
@@ -220,5 +220,5 @@ class EnhancedAstroChoirGenerator(AstroChoirGenerator):
             return gen.generate_full_composition()
         except Exception as e:
             logging.error(f"Process {path} Fail: {str(e)}")
-            return stream.Score()  # Return empty score to prevent crash
+            return stream.Score() 
     
