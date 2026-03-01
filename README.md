@@ -1,2 +1,6 @@
 # Chem_Music
-This project focused on the sonification of stellar properties, especially of spectra data. This the primary version of a stellar choir, a musical composition generated from 997 stars in the summer sky area through Python programming. 
+This Python project focused on the sonification of stellar properties.
+
+The stellar choir version is a music composition generated from spectra data of 997 stars in the summer sky area. Other spectra data may be used later. 
+
+Supernova 
